@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:id="@+id/fragmentToday"
+    android:gravity="center_horizontal"
+    tools:context="TodayWeatherFragment">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+   <LinearLayout
+       android:id="@+id/weather_panel"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:visibility="gone"
+       android:orientation="horizontal">
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           >
+       <TextView
+           android:id="@+id/txt_city_name"
+           android:textSize="20sp"
+           android:textColor="@color/colorPrimary"
+           android:textStyle="bold"
+           android:text="Weather in Kielce"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+       <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+           
+           <ImageView
+               android:id="@+id/img_weather"
+               android:src="@mipmap/ic_launcher"
+               android:layout_width="60dp"
+               android:layout_height="60dp" />
+
+
+           <TextView
+               android:id="@+id/txt_temperature"
+               android:textSize="23sp"
+               android:layout_marginLeft="8dp"
+               android:textColor="@color/colorPrimary"
+               android:textStyle="bold"
+               android:text="14 C"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+
+
+
+       </LinearLayout>
+
+       <TextView
+           android:id="@+id/txt_date_time"
+           android:textSize="18sp"
+
+           android:textColor="@color/colorPrimary"
+           android:textStyle="bold"
+           android:text="Weather in Kielce "
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+       </LinearLayout>
+
+       <TableLayout
+           android:background="@drawable/border"
+           android:layout_marginTop="2dp"
+           android:layout_marginRight="4dp"
+           android:stretchColumns="*"
+           android:padding="4dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <TableRow
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               >
+
+               <TextView
+                   android:background="@drawable/cell"
+                   android:text="Wind"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+               <TextView
+                   android:layout_marginLeft="8dp"
+                   android:layout_column="1"
+                   android:id="@+id/txt_wind"
+                   android:text="Speed: 1 Deg "
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+
+           </TableRow>
+           <TableRow
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               >
+
+               <TextView
+                   android:background="@drawable/cell"
+                   android:text="Pressure"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+               <TextView
+                   android:layout_marginLeft="8dp"
+                   android:layout_column="1"
+                   android:id="@+id/txt_pressure"
+                   android:text="1013.75 hpa"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+
+           </TableRow>
+           <TableRow
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               >
+
+               <TextView
+                   android:background="@drawable/cell"
+                   android:text="Humidity"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+               <TextView
+                   android:layout_marginLeft="8dp"
+                   android:layout_column="1"
+                   android:id="@+id/txt_humidity"
+                   android:text="100 %"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+
+           </TableRow>
+           <TableRow
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               >
+
+               <TextView
+                   android:background="@drawable/cell"
+                   android:text="Sunrise"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+               <TextView
+                   android:layout_marginLeft="8dp"
+                   android:layout_column="1"
+                   android:id="@+id/txt_sunrise"
+                   android:text="11:00"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+
+           </TableRow>
+           <TableRow
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               >
+
+               <TextView
+                   android:background="@drawable/cell"
+                   android:text="Sunset"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+               <TextView
+                   android:layout_marginLeft="8dp"
+                   android:layout_column="1"
+                   android:id="@+id/txt_sunset"
+                   android:text="18:00"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+
+           </TableRow>
+           <TableRow
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               >
+
+               <TextView
+                   android:background="@drawable/cell"
+                   android:text="Geo coords"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+               <TextView
+                   android:layout_marginLeft="8dp"
+                   android:layout_column="1"
+                   android:id="@+id/txt_geo_coord"
+                   android:text="[32.0,-81.01]"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+
+           </TableRow>
+
+
+
+       </TableLayout>
+
+
+   </LinearLayout>
+        <Button
+            android:id="@+id/btnAnaliz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/loading"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="14dp"
+            android:text="Analizuj Twoje Dzialki" />
+
+        <Button
+            android:id="@+id/btn_menager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/btnAnaliz"
+            android:layout_below="@+id/loading"
+            android:text="Zarzadzaj dzialkami" />
+
+
+        <TextView
+            android:id="@+id/infoTextMain"
+            android:layout_width="276dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:id="@+id/linerLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:indeterminate="true"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

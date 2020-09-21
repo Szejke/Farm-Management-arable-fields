@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.farm.myfarms.InfoFieldActivity">
+
+    <EditText
+        android:id="@+id/textNameInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:enabled="false"
+        android:textColor="@color/normalColorText"
+        android:inputType="textPersonName"
+        android:text="Nazwa"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <EditText
+        android:id="@+id/textSowingInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textNameInfo"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:text="CoZasiane"
+        android:textColor="@color/normalColorText"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="45dp" />
+
+    <EditText
+        android:id="@+id/textStatusInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textSowingInfo"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Status"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="90dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textStatusInfo"
+        android:layout_below="@+id/textStatusInfo"
+        android:layout_marginEnd="94dp"
+        android:text="Proponowany okres "
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="191dp" />
+
+    <EditText
+        android:id="@+id/textProposedInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView7"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Loading.."
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="210dp" />
+
+    <Button
+        android:id="@+id/btnAnalizerInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textProposedInfo"
+        android:layout_marginTop="24dp"
+        android:text="Wyznacz następne działanie uwzględniając pogodę "
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="255dp" />
+
+</RelativeLayout>

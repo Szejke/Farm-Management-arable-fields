@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MyFarms</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Today Weather</string>
+    <string name="title_activity_new_maps">Map</string>
+
+    <string name="google_maps_API_key">AIzaSyD6OF04aGoXqGPeGoIhRdM1PNW8HfGVKzA</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+</resources>
