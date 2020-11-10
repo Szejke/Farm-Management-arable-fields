@@ -21,5 +21,4 @@ Wymagania:
 Java w wersji 8.
 Emulator smartfonu o minimalnej wersji systemu Android 4.4 KitKat poziom 19
 
-
-![Drag Racing](yes.jpg)
+![Screenshot](yes.jpg)
